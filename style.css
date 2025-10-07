@@ -1,0 +1,120 @@
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.lexend-deca {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: hsl(233, 47%, 7%);
+}
+.main-con{
+    width: 280px;
+   text-align: center;
+    background-color:  hsl(244, 37%, 16%);
+    color: white;
+    border-radius: 10px;
+    
+}
+.main-con img{
+    width: 280px;
+    height: 220px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.text{
+    padding: 20px 30px;
+}
+.stats h3 {
+    padding-top: 10px;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+.stats p{
+    font-size: 10px;
+    color: rgb(194, 189, 189);
+    line-height: 1;
+    
+}
+.attribution {
+padding-top: 20px;
+  min-width: 350px;
+}
+.image-purple {
+  position: relative;
+}
+
+.image-purple {
+  display: block;
+  width: 100%;
+}
+
+.image-purple::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: hsl(277, 84%, 66%);
+  opacity: 0.9;   /* adjust strength */
+  mix-blend-mode: multiply;
+}
+
+
+@media (min-width: 800px) {
+
+.main-con {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 700px;
+  min-height: 300px; 
+  text-align: left;
+  margin-right: 0;
+  
+}
+
+  .text {
+    padding: 30px;
+    padding-right: 45px;
+    flex: 1; 
+    width: 350px;
+  }
+  .paragraph{
+    padding-right: 50px;
+  }
+
+  .image-purple {
+    flex: 1; 
+    
+  }
+  .image-purple img {
+    width: 350px;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0;
+  }
+  .image-purple img {
+    content: url('image-header-desktop.jpg');
+  }
+
+  .stats {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 40px;
+  }
+}
